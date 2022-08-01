@@ -5,15 +5,13 @@ import Coinpage from "./Pages/Coinpage";
 import Header from "./Components/Header";
 // import { makeStyles } from "@mui/styles";
 
-
 function App() {
-  
   return (
     <BrowserRouter>
       <div>
         <Header />
         <Routes>
-          <Route path="/" element={<Homepage />}  exact/>
+          <Route path="/" element={<Homepage />} exact />
           <Route path="/coins/:id" element={<Coinpage />} />
         </Routes>
       </div>
